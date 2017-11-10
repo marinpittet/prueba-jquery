@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 		var post_it = $('#post').val();
 		var blog = $("aside.col-md-7");
-		
+		if (post_it != '') {
 		blog.append(
 			'<div class="col-md-11">'
 				+'<div class="post_in w3-animate-right">'
@@ -35,7 +35,7 @@ $(document).ready(function(){
 					+'</p>'
 				+'</div>'
 			+'</div>'
-		);
+		);}
 
 		$("#post").val('');
 	});
