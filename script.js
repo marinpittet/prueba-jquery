@@ -21,7 +21,7 @@ $(document).ready(function(){
 								+'<span class="like glyphicon glyphicon-thumbs-up">'
 									+'<span>'
 										+'<span class="t">'
-										
+										+ 0
 										+'</span>'
 									+'</span>'
 							    +'</span>'
@@ -36,44 +36,27 @@ $(document).ready(function(){
 				+'</div>'
 			+'</div>'
 		);
-		var i = 0;
 
-		var erase = $('.erase');
-		var like = $('.like');
-		var notification = $('.t');
-
-		if (this == event.target) {
-			//console.log(post_it);
-			post_it = $("#post").val('');
-		};
-		
-		erase.on('click', function(){
-				$(this).css("background-color", "rgba(255, 0, 0,.7)");
-				$(this).parents("div.post_in").fadeOut(500);
-		})
-
-		like.click(function(){
-				$(this).css("background-color", "#ff029d");
-				$(this).children().addClass("notification");
-
-				notification.addClass("noti-text");
-				
-				$(this).find('.noti-text').text(0);
-
-				//i++;
-    	})
-
-		 $("aside.col-md-7").on('click',".like", function(){
-			var counter = parseInt( $(this).find('.noti-text').text() );
-			
-			counter++;
-			console.log($(this).find('.noti-text').text(counter))
-			$(this).find('.noti-text').text(counter);
-		})
-		
-
+		$("#post").val('');
 	});
+		
+	$('.erase').on('click', function(){
+			$(this).css("background-color", "rgba(255, 0, 0,.7)");
+			$(this).parents("div.post_in").fadeOut(500);
+	})
 
+	$("aside.col-md-7").on('click',".like", function(e){
+		//console.log(e.target)
+		$(this).css("background-color", "#ff029d");
+		$(this).children().addClass("notification");
+
+	    $(this).find('.t').addClass("noti-text");
+
+		var counter = parseInt( $(this).find('.noti-text').text() );
+		
+		counter++;
+		$(this).find('.noti-text').text(counter);
+	})
 		
 });
 

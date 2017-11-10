@@ -195,9 +195,12 @@ p.notes {
 	border-radius: 5px;
 	top: -3px;
 	right: -6px;
-
 }
-.noti-text {
+span.t {
+	display: none;
+}
+span.noti-text {
+	display: inline;
 	color: white;
 	text-align: center;
 	font-size: 10px;
