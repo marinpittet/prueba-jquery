@@ -39,8 +39,8 @@ $(document).ready(function(){
 
 		$("#post").val('');
 	});
-		
-	$('.erase').on('click', function(){
+
+	$("aside.col-md-7").on('click','.erase', function(){
 			$(this).css("background-color", "rgba(255, 0, 0,.7)");
 			$(this).parents("div.post_in").fadeOut(500);
 	})
