@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Thinker</title>
+
+	<!-- jQuery 3x -->
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"> 
+	</script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="style.css">	
+</head>
+<body>
+	<!-- barra de navegacion -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle='collapse' data-target='#myNavbar'>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Thinker</a>
+			</div>
+			<div class="collpase navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Mi Perfil</a></li>		
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- contenedor pagina -->
+	<div class="container">
+		<!-- Ingreso de post Thinker -->
+		<section class="post col-md-5 col-sm-12 col-xs-12">
+			<form id="form">
+				<textarea id="post" rows="5" class="col-md-12 col-sm-12 col-xs-12" name="post" placeholder=" I Think Luego existo..." autofocus=""></textarea>
+				<input id="submit" type="submit" value="Publicar Think!">
+			</form>		
+		</section>
+		
+		<!-- muro lateral -->
+		<aside class="col-md-7 col-sm-12 col-xs-12">
+	
+			<div class="head">
+				<img src="images/desafio-latam.jpg" alt="pic_big" class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-4 col-xs-offset-4 pic2">
+				<h5 class="col-md-12 titulo col-sm-12 col-xs-12">Desafio Latam - Santiago de Chile</h5>			
+				<h3 class="col-md-12 titulo col-sm-12 col-xs-12">Mis Thinks</h3>
+			</div>
+		<!--
+			<div class="col-md-11">
+				<div class="post_in">
+					<div class="noti-head">
+						<a class="user-pic" href="#">
+							<img class="pic" src="images/like.png" alt="">
+							-user
+						</a>
+			
+						<ul class="buttons">
+							<li class="but"><span class="erase glyphicon glyphicon-trash"></span></li>
+							<li class="but"><span class="like glyphicon glyphicon-thumbs-up"><span></span></span></li>	
+						</ul>
+					</div>
+					<div class="separador"></div>
+					<p class="notes">		
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem totam deserunt adipisci, nostrum asperiores suscipit optio reprehenderit, nemo similique cum harum nulla. Unde placeat doloremque id, necessitatibus odio, neque alias.
+					</p>
+				</div>
+			</div>-->
+			<!--
+			<div class="col-md-11">
+				<div class="post_in">
+						<div class="row note">
+
+							<div class="erase">
+								<span class="glyphicon glyphicon-trash"></span>
+							</div>
+						
+							<div>	
+								<img src="images/like.png" alt="like" class="like">
+								<span class="notification">
+									<p class="number">20</p>
+								</span>
+							</div>	
+						
+
+						</div>
+					<p class="notes">		
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem totam deserunt adipisci, nostrum asperiores suscipit optio reprehenderit, nemo similique cum harum nulla. Unde placeat doloremque id, necessitatibus odio, neque alias.
+					</p>
+				</div>
+			</div>	<--></-->
+		</aside>
+
+			
+	</div>
+
+	<script src="script.js">
+		
+	</script>
+</body>
+</html>
